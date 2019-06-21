@@ -1,5 +1,30 @@
+
 spring:
+   profiles: dev   
    datasource:
     url: jdbc:mysql://localhost/devdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: 
+welcome:
+  message: "hai this is dev"
+  
+---
+spring:
+   profiles: prod   
+   datasource:
+    url: jdbc:mysql://localhost/proddb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password:
+welcome:
+  message: "hai this is prod"
+---      
+       
+spring:
+   profiles: test  
+   datasource:
+    url: jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 
+welcome:
+  message: "hai this is test"  
+
