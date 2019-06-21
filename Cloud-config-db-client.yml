@@ -5,5 +5,21 @@ spring:
       username: root
       password: 
 message: I AM DEV
+---
+spring:
+   profiles: test
+   datasource:
+      url: jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      username: root
+      password: 
+message: I AM TSET
+---
+spring:
+   profiles: prod
+   datasource:
+      url: jdbc:mysql://localhost/proddb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      username: root
+      password: 
+message: I AM PROD
  
 
