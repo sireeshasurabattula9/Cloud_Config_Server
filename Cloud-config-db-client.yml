@@ -14,8 +14,7 @@ spring:
     url: jdbc:mysql://localhost/proddb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password:
-welcome:
-  message: hai this is prod
+ message: hai this is prod
 ---      
        
 spring:
@@ -24,6 +23,5 @@ spring:
     url: jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: 
-welcome:
-  message: hai this is test  
+message: hai this is test  
 
