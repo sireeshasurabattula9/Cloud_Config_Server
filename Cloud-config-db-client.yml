@@ -5,6 +5,10 @@ spring:
       username: root
       password: 
 message: I AM DEV
+   jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
 ---
 spring:
    profiles: test
@@ -13,6 +17,10 @@ spring:
       username: root
       password: 
 message: I AM TSET
+   jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
 ---
 spring:
    profiles: prod
@@ -21,5 +29,7 @@ spring:
       username: root
       password: 
 message: I AM PROD
- 
-
+   jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
