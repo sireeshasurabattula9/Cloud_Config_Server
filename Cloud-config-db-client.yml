@@ -1,7 +1,9 @@
 spring:
+   profiles: dev
    datasource:
       url: jdbc:mysql://localhost/devdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
       username: root
       password: 
+message: I AM DEV
  
 
