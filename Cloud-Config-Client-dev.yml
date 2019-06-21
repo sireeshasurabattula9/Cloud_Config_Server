@@ -1,0 +1,11 @@
+spring:
+   profiles: dev
+   datasource:
+      url: jdbc:mysql://localhost/devdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      username: root
+      password: 
+   jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+message: I AM DEV
